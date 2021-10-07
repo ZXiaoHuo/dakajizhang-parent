@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 110.40.170.199:8848
+        prefix: dakajizhang-web
+        file-extension: yml
+        group: dev
+      discovery:
+        server-addr: 110.40.170.199:8848
+  application:
+    name: dakajizhang-web
+#        namespace: f7c0fb27-1729-4ed5-b600-4b2ec12e1f88

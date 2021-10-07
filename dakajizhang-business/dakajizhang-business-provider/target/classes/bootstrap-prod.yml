@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr:
+        prefix: cloudTest-api
+        file-extension: yml
+        group: prod
+        namespace: d592be25-a726-44f7-a1d0-418970f64741

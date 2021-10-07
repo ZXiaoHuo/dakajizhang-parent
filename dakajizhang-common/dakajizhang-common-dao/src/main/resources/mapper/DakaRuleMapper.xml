@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zqh.dakajizhang.mapper.DakaRuleMapper" >
+
+
+
+  <select id="findList" resultType="com.zqh.dakajizhang.pojo.DakaRule">
+    SELECT
+    *
+    FROM tb_daka_rule
+    where
+    <if test="enabled != null and enabled != ''">
+        and enabled = #{enabled}
+    </if>
+    <if test="userId != null and userId != ''">
+        and user_id = #{userId}
+    </if>
+  </select>
+</mapper>

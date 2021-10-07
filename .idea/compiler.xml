@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dakajizhang-common-dao" />
+        <module name="dakajizhang-common-pojo" />
+        <module name="dakajizhang-api" />
+        <module name="dakajizhang-business-provider" />
+        <module name="dakajizhang-business-interface" />
+        <module name="dakajizhang-web" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dakajizhang-api" options="-parameters" />
+      <module name="dakajizhang-business" options="-parameters" />
+      <module name="dakajizhang-business-interface" options="-parameters" />
+      <module name="dakajizhang-business-provider" options="-parameters" />
+      <module name="dakajizhang-common" options="-parameters" />
+      <module name="dakajizhang-common-dao" options="-parameters" />
+      <module name="dakajizhang-common-pojo" options="-parameters" />
+      <module name="dakajizhang-parent" options="-parameters" />
+      <module name="dakajizhang-web" options="-parameters" />
+    </option>
+  </component>
+</project>
